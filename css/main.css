@@ -68,15 +68,15 @@ header {
   font-size: 3em;
   font-family: indie flower;
   letter-spacing: 1.5em;
-  text-decoration: underline; }
+  text-decoration: underline;
+  border-radius: 30px; }
 
 .activities {
   text-align: center;
   font-size: 3em;
   font-family: indie flower;
   letter-spacing: 1.5em;
-  text-decoration: underline;
-  background-color: brown; }
+  text-decoration: underline; }
 
 .list {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -104,7 +104,7 @@ header {
   grid-gap: 20px;
   grid-template-columns: 5fr 5fr 5fr;
   grid-template-rows: 5fr 5fr 5fr;
-  grid-template-areas: "activities activities activities" "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6"; }
+  grid-template-areas: "activities activities activities" "figure_1 figure_2 figure_3" "figure_1 figure_2 figure_3"; }
 
 .activities {
   grid-area: activities; }
@@ -116,24 +116,10 @@ header {
 
 .figure_2 {
   grid-area: figure_2;
-  background-image: url(../images/Aquila-Private-Game-Reserve.jpg); }
+  background-image: url(../images/rock-pool.jpg); }
 
 .figure_3 {
   grid-area: figure_3;
   background-image: url(../images/safari.jpg); }
-
-.figure_4 {
-  grid-area: figure_4;
-  background-image: url(../images/special-occasions-zipline-tours.jpg);
-  background-repeat: no-repeat;
-  max-height: 100%; }
-
-.figure_5 {
-  grid-area: figure_5;
-  background-image: url(../images/Crystal_Pools_Gordons_Bay.jpg); }
-
-.figure_6 {
-  grid-area: figure_6;
-  background-image: url(../images/rock-pool.jpg); }
 
 /*# sourceMappingURL=main.css.map */
