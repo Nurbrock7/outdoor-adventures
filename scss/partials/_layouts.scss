@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+    "activities activities activities"
+    "figure_1 figure_2 figure_3"
+    "figure_4 figure_5 figure_6"
+}
+.activities {
+    grid-area: activities
+}
+
+.figure_1 {
+    grid-area: figure_1;
+    background-image: url(../images/quad-biking..jpg);
+    max-height: 100% ;
+
+}
+
+.figure_2 {
+    grid-area: figure_2;
+    background-image: url(../images/Aquila-Private-Game-Reserve.jpg)
+}
+
+.figure_3 {
+    grid-area: figure_3;
+    background-image: url(../images/safari.jpg)
+
+}
+
+.figure_4 {
+    grid-area: figure_4;
+    background-image: url(../images/special-occasions-zipline-tours.jpg);
+    background-repeat: no-repeat;
+    max-height: 100%;
+}
+
+.figure_5 {
+    grid-area: figure_5;
+    background-image: url(../images/Crystal_Pools_Gordons_Bay.jpg)
+}
+
+.figure_6 {
+    grid-area: figure_6;
+    background-image: url(../images/rock-pool.jpg)
+}
+
