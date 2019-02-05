@@ -1,8 +1,8 @@
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr 5fr;
     grid-template-areas: 
     "activities activities activities"
     "figure_1 figure_2 figure_3"

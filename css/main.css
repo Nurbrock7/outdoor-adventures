@@ -1,14 +1,14 @@
 /* Mixins -------------------- */
 .navbar {
   overflow: hidden;
-  background-color: #81757580;
+  background-color: #000000b3;
   position: sticky;
   padding-bottom: 10px;
   padding-top: 10px; }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding-left: 100px;
@@ -23,7 +23,7 @@
   padding-right: 100px; }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   outline: none;
   color: white;
@@ -39,7 +39,6 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
@@ -76,7 +75,8 @@ header {
   font-size: 3em;
   font-family: indie flower;
   letter-spacing: 1.5em;
-  text-decoration: underline; }
+  text-decoration: underline;
+  background-color: brown; }
 
 .list {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -85,7 +85,16 @@ header {
 .box {
   border-radius: 20px;
   background-blend-mode: exclusion;
-  border: 1em; }
+  border: 1em;
+  outline: white; }
+
+.heading {
+  background-color: #00000087;
+  color: darkgoldenrod;
+  margin: 200px; }
+
+.container {
+  background-image: url(../images/Aquila-Private-Game-Reserve.jpg); }
 
 .body {
   background-image: url(images/Aquila-Private-Game-Reserve.jpg); }
@@ -93,8 +102,8 @@ header {
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-columns: 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr 5fr;
   grid-template-areas: "activities activities activities" "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6"; }
 
 .activities {

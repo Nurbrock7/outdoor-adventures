@@ -1,7 +1,7 @@
 
 .navbar {
     overflow: hidden;
-    background-color: #81757580;
+    background-color: #000000b3;
     position: sticky;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -10,7 +10,7 @@
   
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding-left: 100px;
@@ -29,7 +29,7 @@
   }
   
   .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 20px;  
     border: none;
     outline: none;
     color: white;
@@ -47,7 +47,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -93,6 +93,7 @@
     font-family: indie flower;
     letter-spacing: 1.5em;
     text-decoration: underline;
+    background-color: brown;
     
   }
 
@@ -105,4 +106,15 @@
     border-radius: 20px;
     background-blend-mode: exclusion;
     border: 1em;
+    outline: white ;
+}
+
+.heading {
+    background-color: #00000087;
+    color: darkgoldenrod;
+    margin: 200px;
+}
+
+.container {
+    background-image: url(../images/Aquila-Private-Game-Reserve.jpg)
 }
