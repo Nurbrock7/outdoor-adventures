@@ -1,32 +1,88 @@
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+}
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 5fr 5fr 5fr;
-    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "activities activities activities"
+    ". p ."
     "figure_1 figure_2 figure_3"
-    "figure_1 figure_2 figure_3"
+    "figure_4 figure_5 figure_6"
 }
 .activities {
     grid-area: activities
+}
+
+.p {
+    grid-area: p;
 }
 
 .figure_1 {
     grid-area: figure_1;
     background-image: url(../images/quad-biking..jpg);
     max-height: 100% ;
+    margin-left: 10px;
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 25px;
+    
 
 }
 
 .figure_2 {
     grid-area: figure_2;
-    background-image: url(../images/rock-pool.jpg)
+    background-image: url(../images/Aquila-Private-Game-Reserve.jpg);
+    background-size: cover;
+    padding-right: 10px;
+    border-radius: 25px;
+
+
 }
 
 .figure_3 {
     grid-area: figure_3;
-    background-image: url(../images/safari.jpg)
-
+    background-image: url(../images/safari.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    margin-right: 10px;
 }
 
+.figure_4 {
+    grid-area: figure_4;
+    background-image: url(../images/special-occasions-zipline-tours.jpg);
+    background-repeat: no-repeat;
+    max-height: 100%;
+    margin-left: 10px;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.figure_5 {
+    grid-area: figure_5;
+    background-image: url(../images/Crystal_Pools_Gordons_Bay.jpg);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.figure_6 {
+    grid-area: figure_6;
+    background-image: url(../images/rock-pool.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    margin-right: 10px
+}
+
+.quad {
+    grid-template-areas: 
+    "biking . ."
+}
