@@ -172,7 +172,8 @@ header {
 .zip3 {
   width: 300px;
   height: 200px;
-  padding-left: 100px; }
+  padding-left: 100px;
+  padding-top: 20px; }
 
 .zip4 {
   font-size: 20px;
@@ -186,7 +187,8 @@ header {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 20px; }
 
 .icon {
   height: 100px;
@@ -337,7 +339,7 @@ ul li ul li {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: "safari2 safari2" "img safari3"; }
+  grid-template-areas: "safari2 safari2" "safari3 img "; }
 
 .img {
   background-size: cover;
@@ -371,7 +373,7 @@ ul li ul li {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: "zip2 zip2" "zip3 zip4"; }
+  grid-template-areas: "zip2 zip2" "zip4 zip3"; }
 
 .zip2 {
   grid-area: zip2; }
@@ -381,5 +383,11 @@ ul li ul li {
 
 .zip4 {
   grid-area: zip4; }
+
+.gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
 
 /*# sourceMappingURL=main.css.map */
