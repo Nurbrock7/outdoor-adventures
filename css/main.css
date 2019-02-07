@@ -1,37 +1,37 @@
 /* Mixins -------------------- */
+html {
+  scroll-behavior: smooth; }
+
 header {
-  background-image: url(../images/nature.jpg);
+  background-image: url(../images/pexelshd.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vh;
-  background-color: #0009; }
+  background-color: #0009;
+  color: goldenrod; }
 
 .heading {
   text-align: center;
   font-size: 3em;
-  font-family: indie flower;
-  letter-spacing: 1.5em;
+  font-family: monospace;
   text-decoration: underline;
   margin-top: 0px;
   padding-top: 200px;
-  background-color: #0009; }
+  background-color: #0000004d;
+  color: goldenrod; }
 
 .activities {
   text-align: center;
   font-size: 3em;
-  font-family: indie flower;
-  letter-spacing: 1.5em;
+  font-family: 'Quicksand', sans-serif;
   text-decoration: underline;
+  letter-spacing: 0.6em;
   background-color: #9494944d;
-  border-radius: 25px; }
+  border-radius: 30px; }
 
 .list {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1em; }
-
-.heading {
-  background-color: #0009;
-  color: darkgoldenrod; }
 
 .container {
   background-color: black; }
@@ -43,15 +43,157 @@ header {
   text-align: center; }
 
 .quad {
+  background-color: black;
+  align-content: center;
+  color: white; }
+
+.quad2 {
   text-align: center;
   padding-top: 50px;
   text-decoration: underline;
   font-size: xx-large;
-  background: blue;
+  background: #9494944d;
   padding-bottom: 50px; }
 
 .biking {
-  text-align: left; }
+  text-align: left;
+  padding-left: 100px;
+  width: 300px;
+  height: 200px; }
+
+.wild {
+  font-size: 40px;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: normal;
+  background-color: #0000004d;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: darkblue; }
+
+.routes {
+  border-left-style: solid;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  margin-right: 20px;
+  font-size: 20px; }
+
+.safari {
+  background-color: black;
+  align-content: center;
+  color: white;
+  padding-bottom: 50px; }
+
+.img {
+  width: 300px;
+  height: 200px;
+  padding-left: 100px; }
+
+.safari2 {
+  text-align: center;
+  padding-top: 50px;
+  text-decoration: underline;
+  font-size: xx-large;
+  background: #9494944d;
+  padding-bottom: 50px; }
+
+.safari3 {
+  border-left-style: solid;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  margin-right: 20px;
+  font-size: 20px; }
+
+.hiking {
+  background-color: black;
+  align-content: center;
+  color: white;
+  padding-bottom: 50px; }
+
+.hiking2 {
+  text-align: center;
+  padding-top: 50px;
+  text-decoration: underline;
+  font-size: xx-large;
+  background: #9494944d;
+  padding-bottom: 50px; }
+
+.hiking3 {
+  width: 300px;
+  height: 200px;
+  padding-left: 100px; }
+
+.hiking4 {
+  border-left-style: solid;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  font-size: 20px; }
+
+.zip {
+  background-color: black;
+  align-content: center;
+  color: white;
+  padding-bottom: 50px; }
+
+.zip2 {
+  text-align: center;
+  padding-top: 50px;
+  text-decoration: underline;
+  font-size: xx-large;
+  background: #9494944d;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.zip3 {
+  width: 300px;
+  height: 200px;
+  padding-left: 100px; }
+
+.zip4 {
+  font-size: 20px;
+  border-left-style: solid;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  margin-right: 20px; }
+
+.icon {
+  height: 100px;
+  width: 100px;
+  padding-left: 600px;
+  margin-left: 100px;
+  padding-top: 100px; }
 
 .body {
   background-color: black; }
@@ -114,14 +256,14 @@ ul li ul li {
 .body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "nav nav nav" "header header header"; }
 
 .container {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
   grid-template-areas: "activities activities activities" ". p ." "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6"; }
 
 .activities {
@@ -177,6 +319,67 @@ ul li ul li {
   margin-right: 10px; }
 
 .quad {
-  grid-template-areas: "biking . ."; }
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "quad2 quad2" "biking routes"; }
+
+.quad2 {
+  grid-area: quad2; }
+
+.biking {
+  grid-area: biking;
+  background-size: cover; }
+
+.safari {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "safari2 safari2" "img safari3"; }
+
+.img {
+  background-size: cover;
+  width: 300px;
+  height: 200px; }
+
+.safari2 {
+  grid-area: safari2; }
+
+.safari3 {
+  grid-area: safari3; }
+
+.hiking {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "hiking2 hiking2" "hiking3 hiking4"; }
+
+.hiking2 {
+  grid-area: hiking2; }
+
+.hiking3 {
+  grid-area: hiking3; }
+
+.hiking4 {
+  grid-area: hiking4; }
+
+.zip {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "zip2 zip2" "zip3 zip4"; }
+
+.zip2 {
+  grid-area: zip2; }
+
+.zip3 {
+  grid-area: zip3; }
+
+.zip4 {
+  grid-area: zip4; }
 
 /*# sourceMappingURL=main.css.map */

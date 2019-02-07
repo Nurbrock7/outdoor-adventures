@@ -2,7 +2,7 @@
 .body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-template-areas: 
     "nav nav nav"
     "header header header"
@@ -11,7 +11,7 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
     grid-template-areas: 
     "activities activities activities"
     ". p ."
@@ -83,6 +83,98 @@
 }
 
 .quad {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr ;
     grid-template-areas: 
-    "biking . ."
+    "quad2 quad2"
+    "biking routes"
+
 }
+
+.quad2 {
+    grid-area: quad2;
+    
+}
+
+.biking {
+    grid-area: biking;
+    background-size: cover;
+}
+
+.safari {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr ;
+    grid-template-areas: 
+    "safari2 safari2"
+    "img safari3"
+
+}
+
+.img {
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.safari2 {
+    grid-area: safari2;
+    
+}
+
+.safari3 {
+    grid-area: safari3;
+}
+
+.hiking {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr ;
+    grid-template-areas: 
+    "hiking2 hiking2"
+    "hiking3 hiking4"
+}
+
+.hiking2 {
+    grid-area: hiking2
+}
+
+.hiking3 {
+    grid-area: hiking3
+}
+
+.hiking4 {
+    grid-area: hiking4
+}
+
+
+.zip {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr ;
+    grid-template-areas:
+    "zip2 zip2"
+    "zip3 zip4"
+
+}
+ 
+.zip2 {
+    grid-area: zip2;
+}   
+
+.zip3 {
+    grid-area: zip3;
+}
+
+.zip4 {
+    grid-area: zip4
+}
+
+
+// gallery start--------------
+
