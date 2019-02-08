@@ -196,6 +196,59 @@ header {
   padding-top: 100px; }
 
 .body {
+  background-image: url(../images/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpg); }
+
+* {
+  box-sizing: border-box; }
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block; }
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px; }
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.queries {
+  text-align: center; }
+
+.body {
   background-color: black; }
 
 a {
@@ -253,18 +306,22 @@ ul li ul li {
   clear: both;
   width: 100%; }
 
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0; } }
 .body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "nav nav nav" "header header header"; }
+  grid-template-areas: "nav nav nav" "header header header" "footer footer"; }
 
 .container {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
-  grid-template-areas: "activities activities activities" ". p ." "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6"; }
+  grid-template-areas: "activities activities activities" ". p ." "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6" "footer footer"; }
 
 .activities {
   grid-area: activities; }
@@ -381,5 +438,16 @@ ul li ul li {
 
 .zip4 {
   grid-area: zip4; }
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: space-evenly; }
+  .gallery-container .img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */

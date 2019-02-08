@@ -6,6 +6,7 @@
     grid-template-areas: 
     "nav nav nav"
     "header header header"
+    "footer footer"
 }
 .container {
     display: grid;
@@ -17,6 +18,7 @@
     ". p ."
     "figure_1 figure_2 figure_3"
     "figure_4 figure_5 figure_6"
+    "footer footer"
 }
 .activities {
     grid-area: activities
@@ -178,3 +180,16 @@
 
 // gallery start--------------
 
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-evenly;
+    .img{
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+        padding: 20px;
+
+    }
+}
