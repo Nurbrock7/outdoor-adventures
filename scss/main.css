@@ -193,8 +193,8 @@ header {
   margin-left: 100px;
   padding-top: 100px; }
 
-.contact-body {
-  background-image: url(../images/trees.jpg); }
+.body {
+  background-image: url(/images/trees.jpg); }
 
 * {
   box-sizing: border-box; }
@@ -206,17 +206,6 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical; }
-
-.queries {
-  text-transform: uppercase;
-  text-align: center;
-  display: grid;
-  border: 2px solid black;
-  width: 50%;
-  text-align: center;
-  margin: 0.5em auto;
-  border-radius: 20%;
-  font-family: 'Merriweather', serif; }
 
 label {
   padding: 12px 12px 12px 0;
@@ -237,27 +226,33 @@ input[type=submit]:hover {
 .contact {
   display: grid;
   border-radius: 5px;
-  padding: 20px;
-  font-family: 'Merriweather', serif; }
+  padding: 20px; }
 
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
-  text-align: center; }
+  margin-top: 6px; }
 
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
-  text-align: center;
-  text-decoration: black; }
+  margin-top: 6px; }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both; }
+
+.queries {
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+  margin: 0.5em auto;
+  border-radius: 20%; }
 
 /* Mixins -------------------- */
 .body {

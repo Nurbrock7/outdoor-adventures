@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin : 0% ;
+}
+
   header {
       background-image: url(../images/pexelshd.jpg);
       background-repeat: no-repeat;
@@ -221,17 +225,8 @@ border-right-width: 3px;
 border-right-style: solid;
 border-bottom-width: 3px;
 
-
-// contact start ----------------------------
-border-bottom-style: solid;
-padding-left: 50px;
-padding-right: 50px;
-padding-top: 20px;
-margin-right: 20px;
-
 }
-
-
+// contact start ----------------------------
 .icon {
 
     height: 100px;
@@ -241,8 +236,8 @@ margin-right: 20px;
     padding-top: 100px;
 }
 
- .body {
-     background-image: url(../images/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpg)
+ .contact-body {
+     background-image: url(../images/trees.jpg);
  }
 * {
     box-sizing: border-box;
@@ -250,14 +245,27 @@ margin-right: 20px;
   }
   
   input[type=text], select, textarea {
+    display: grid;
     width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
   }
-  
-  label {
+  .queries {
+    text-transform: uppercase;
+    text-align: center;
+    display: grid;
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 0.5em auto;
+    border-radius: 20%;
+    font-family: 'Merriweather', serif;
+}
+
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
@@ -277,21 +285,28 @@ margin-right: 20px;
   }
   
   .contact {
+    display: grid;
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
+    font-family: 'Merriweather', serif;
+
+
+
   }
   
   .col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
+    text-align: center
   }
   
   .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
+    text-align: center;
+    text-decoration: black;
   }
   
   /* Clear floats after the columns */
@@ -300,8 +315,4 @@ margin-right: 20px;
     display: table;
     clear: both;
   }
-
-.queries {
-    text-align: center
-}
 
