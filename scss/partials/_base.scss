@@ -238,6 +238,9 @@ border-bottom-width: 3px;
 
  .contact-body {
      background-image: url(../images/trees.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     
  }
 * {
     box-sizing: border-box;
@@ -298,7 +301,8 @@ label {
     float: left;
     width: 25%;
     margin-top: 6px;
-    text-align: center
+    text-align: center;
+    color: white;
   }
   
   .col-75 {
@@ -307,6 +311,7 @@ label {
     margin-top: 6px;
     text-align: center;
     text-decoration: black;
+    color: white;
   }
   
   /* Clear floats after the columns */
