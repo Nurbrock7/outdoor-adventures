@@ -14,8 +14,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "activities activities activities"
-    ". p ."
+
+    "wild wild wild"
     "figure_1 figure_2 figure_3"
     "figure_4 figure_5 figure_6"
     "footer footer"
@@ -90,13 +90,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr ;
     grid-template-areas: 
-    "quad2 quad2"
+    "quad-biking quad-biking"
     "biking routes"
 
 }
 
-.quad2 {
-    grid-area: quad2;
+.quad-biking {
+    grid-area: quad-biking;
     
 }
 
@@ -111,8 +111,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr ;
     grid-template-areas: 
-    "safari2 safari2"
-    "safari3 img "
+    "safari-drive safari-drive"
+    "safari-paragraph img "
 
 }
 
@@ -122,13 +122,13 @@
     height: 200px;
 }
 
-.safari2 {
-    grid-area: safari2;
+.safari-drive {
+    grid-area: safari-drive;
     
 }
 
-.safari3 {
-    grid-area: safari3;
+.safari-paragraph {
+    grid-area: safari-paragraph;
 }
 
 .hiking {
@@ -137,20 +137,20 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr ;
     grid-template-areas: 
-    "hiking2 hiking2"
-    "hiking3 hiking4"
+    "hiking-trail hiking-trail"
+    "hiking-img hiking-paragraph"
 }
 
-.hiking2 {
-    grid-area: hiking2
+.hiking-trail {
+    grid-area: hiking-trail
 }
 
-.hiking3 {
-    grid-area: hiking3
+.hiking-img {
+    grid-area: hiking-img
 }
 
-.hiking4 {
-    grid-area: hiking4
+.hiking-paragraph {
+    grid-area: hiking-paragraph
 }
 
 
@@ -160,21 +160,21 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr ;
     grid-template-areas:
-    "zip2 zip2"
-    "zip4 zip3"
+    "zip-heading zip-heading"
+    "zip-paragraph zip-img"
 
 }
  
-.zip2 {
-    grid-area: zip2;
+.zip-heading {
+    grid-area: zip-heading;
 }   
 
-.zip3 {
-    grid-area: zip3;
+.zip-img {
+    grid-area: zip-img;
 }
 
-.zip4 {
-    grid-area: zip4
+.zip-paragraph {
+    grid-area: zip-paragraph
 }
 
 

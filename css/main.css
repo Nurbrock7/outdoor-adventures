@@ -8,7 +8,6 @@ header {
   background-image: url(../images/pexelshd.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 100vh;
   background-color: #0009;
   color: goldenrod; }
 
@@ -138,7 +137,7 @@ header {
   align-content: center;
   color: white; }
 
-.quad2 {
+.quad-biking {
   text-align: center;
   padding-top: 50px;
   text-decoration: underline;
@@ -183,12 +182,7 @@ header {
   color: white;
   padding-bottom: 50px; }
 
-.img {
-  width: 300px;
-  height: 200px;
-  padding-left: 100px; }
-
-.safari2 {
+.safari-drive {
   text-align: center;
   padding-top: 50px;
   text-decoration: underline;
@@ -196,7 +190,7 @@ header {
   background: #9494944d;
   padding-bottom: 50px; }
 
-.safari3 {
+.safari-paragraph {
   border-left-style: solid;
   border-top-width: 3px;
   border-top-style: solid;
@@ -216,7 +210,7 @@ header {
   color: white;
   padding-bottom: 50px; }
 
-.hiking2 {
+.hiking-trail {
   text-align: center;
   padding-top: 50px;
   text-decoration: underline;
@@ -224,12 +218,12 @@ header {
   background: #9494944d;
   padding-bottom: 50px; }
 
-.hiking3 {
+.hiking-img {
   width: 300px;
   height: 200px;
   padding-left: 100px; }
 
-.hiking4 {
+.hiking-paragraph {
   border-left-style: solid;
   border-top-width: 3px;
   border-top-style: solid;
@@ -250,7 +244,7 @@ header {
   color: white;
   padding-bottom: 50px; }
 
-.zip2 {
+.zip-heading {
   text-align: center;
   padding-top: 50px;
   text-decoration: underline;
@@ -260,20 +254,23 @@ header {
   margin-top: 0px;
   margin-bottom: 0px; }
 
-.zip3 {
+.zip-img {
   width: 300px;
   height: 200px;
   padding-left: 100px;
   padding-top: 20px; }
 
-.zip4 {
+.zip-paragraph {
   font-size: 20px;
   border-left-style: solid;
   border-top-width: 3px;
   border-top-style: solid;
   border-right-width: 3px;
   border-right-style: solid;
-  border-bottom-width: 3px; }
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-top: 30px;
+  padding-left: 10px; }
 
 .icon {
   height: 100px;
@@ -356,6 +353,20 @@ input[type=submit]:hover {
   display: table;
   clear: both; }
 
+.span_one {
+  grid-column: span 2; }
+
+.main-footer {
+  background-color: #73dfd168;
+  height: 10vh;
+  text-align: center;
+  display: block;
+  padding: 2vh;
+  contain: content; }
+  .main-footer .left-text p {
+    font-size: 1vw;
+    margin-top: 1.4vh; }
+
 /* Mixins -------------------- */
 .body {
   background-color: black; }
@@ -415,6 +426,126 @@ ul li ul li {
   clear: both;
   width: 100%; }
 
+@media (max-width: 900px) {
+   /*
+* Made by Erik Terwan
+* 24th of November 2015
+* MIT License
+*
+*
+* If you are thinking of using this in
+* production code, beware of the browser
+* prefixes.
+*/
+  body {
+    margin: 0;
+    padding: 0;
+    /* make it look decent enough */
+    background: #232323;
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif; }
+
+  a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease; }
+
+  a:hover {
+    color: tomato; }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none; }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323; }
+
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px; }
+
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none; } }
 .body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -426,7 +557,7 @@ ul li ul li {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
-  grid-template-areas: "activities activities activities" ". p ." "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6" "footer footer"; }
+  grid-template-areas: "wild wild wild" "figure_1 figure_2 figure_3" "figure_4 figure_5 figure_6" "footer footer"; }
 
 .activities {
   grid-area: activities; }
@@ -485,10 +616,10 @@ ul li ul li {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: "quad2 quad2" "biking routes"; }
+  grid-template-areas: "quad-biking quad-biking" "biking routes"; }
 
-.quad2 {
-  grid-area: quad2; }
+.quad-biking {
+  grid-area: quad-biking; }
 
 .biking {
   grid-area: biking;
@@ -499,50 +630,50 @@ ul li ul li {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: "safari2 safari2" "safari3 img "; }
+  grid-template-areas: "safari-drive safari-drive" "safari-paragraph img "; }
 
 .img {
   background-size: cover;
   width: 300px;
   height: 200px; }
 
-.safari2 {
-  grid-area: safari2; }
+.safari-drive {
+  grid-area: safari-drive; }
 
-.safari3 {
-  grid-area: safari3; }
+.safari-paragraph {
+  grid-area: safari-paragraph; }
 
 .hiking {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: "hiking2 hiking2" "hiking3 hiking4"; }
+  grid-template-areas: "hiking-trail hiking-trail" "hiking-img hiking-paragraph"; }
 
-.hiking2 {
-  grid-area: hiking2; }
+.hiking-trail {
+  grid-area: hiking-trail; }
 
-.hiking3 {
-  grid-area: hiking3; }
+.hiking-img {
+  grid-area: hiking-img; }
 
-.hiking4 {
-  grid-area: hiking4; }
+.hiking-paragraph {
+  grid-area: hiking-paragraph; }
 
 .zip {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: "zip2 zip2" "zip4 zip3"; }
+  grid-template-areas: "zip-heading zip-heading" "zip-paragraph zip-img"; }
 
-.zip2 {
-  grid-area: zip2; }
+.zip-heading {
+  grid-area: zip-heading; }
 
-.zip3 {
-  grid-area: zip3; }
+.zip-img {
+  grid-area: zip-img; }
 
-.zip4 {
-  grid-area: zip4; }
+.zip-paragraph {
+  grid-area: zip-paragraph; }
 
 .gallery-container {
   display: flex;

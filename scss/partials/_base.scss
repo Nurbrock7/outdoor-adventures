@@ -10,7 +10,7 @@ body {
       background-image: url(../images/pexelshd.jpg);
       background-repeat: no-repeat;
       background-size: 100%;
-      height:100vh;
+      
       background-color:  #0009;
       color: goldenrod;
   }
@@ -157,7 +157,7 @@ border-color: #a88d7b; } }
     color: white;
 }
 
-.quad2 {
+.quad-biking {
     text-align: center;
     padding-top: 50px;
     text-decoration: underline;
@@ -208,14 +208,14 @@ border-color: #a88d7b; } }
     padding-bottom: 50px;
 }
 
-.img {
-    width: 300px;
-    height: 200px;
-    padding-left: 100px;
+// .img {
+//     width: 300px;
+//     height: 200px;
+//     padding-left: 100px;
     
-}
+// }
 
-.safari2 {
+.safari-drive {
     text-align: center;
     padding-top: 50px;
     text-decoration: underline;
@@ -224,7 +224,7 @@ border-color: #a88d7b; } }
     padding-bottom: 50px;
 }
 
-.safari3 {
+.safari-paragraph {
 
     border-left-style: solid;
     border-top-width: 3px;
@@ -247,7 +247,7 @@ border-color: #a88d7b; } }
     padding-bottom: 50px;
 }
 
-.hiking2 {
+.hiking-trail {
     
     text-align: center;
     padding-top: 50px;
@@ -257,14 +257,14 @@ border-color: #a88d7b; } }
     padding-bottom: 50px;
 }
 
-.hiking3 {
+.hiking-img {
     
     width: 300px;
     height: 200px;
     padding-left: 100px;
 }
 
-.hiking4 {
+.hiking-paragraph {
     border-left-style: solid;
     border-top-width: 3px;
     border-top-style: solid;
@@ -288,7 +288,7 @@ border-color: #a88d7b; } }
     padding-bottom: 50px;
 }
 
-.zip2 {
+.zip-heading {
 
     text-align: center;
     padding-top: 50px;
@@ -301,14 +301,14 @@ border-color: #a88d7b; } }
 
 }
 
-.zip3 {
+.zip-img {
     width: 300px;
     height: 200px;
     padding-left: 100px;
     padding-top: 20px;
 }
 
-.zip4 {
+.zip-paragraph {
     
     font-size: 20px;
     border-left-style: solid;
@@ -317,8 +317,12 @@ border-top-style: solid;
 border-right-width: 3px;
 border-right-style: solid;
 border-bottom-width: 3px;
-
+border-bottom-style: solid;
+padding-top: 30px;
+padding-left: 10px;
 }
+
+
 // contact start ----------------------------
 .icon {
 
@@ -421,3 +425,23 @@ label {
     clear: both;
   }
 
+  .span_one {
+      grid-column: span 2
+  }
+
+// footer
+
+.main-footer {
+    background-color: #73dfd168;
+    height: 10vh;
+    text-align: center;
+    display: block;
+    padding: 2vh;
+    contain: content;
+        .left-text {
+            p {
+                font-size: 1vw;
+                margin-top: 1.4vh;
+            }
+        }
+}
