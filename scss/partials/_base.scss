@@ -183,7 +183,7 @@ border-color: #a88d7b; } }
     border-radius: 25px;
     padding-left: 10px;
     padding-right: 10px;
-    color: darkblue;
+    color: white;
 }
 
 .routes {
@@ -445,3 +445,20 @@ label {
             }
         }
 }
+
+
+// MASONARY GALLERY
+
+body{
+    margin: 0;
+  }
+  
+  section{
+    column-width: 300px;
+    column-gap: 5px;
+    padding: 5px;
+  }
+  
+  section img{
+    width: 100%; 
+  }

@@ -160,7 +160,7 @@ header {
   border-radius: 25px;
   padding-left: 10px;
   padding-right: 10px;
-  color: darkblue; }
+  color: white; }
 
 .routes {
   border-left-style: solid;
@@ -366,6 +366,17 @@ input[type=submit]:hover {
   .main-footer .left-text p {
     font-size: 1vw;
     margin-top: 1.4vh; }
+
+body {
+  margin: 0; }
+
+section {
+  column-width: 300px;
+  column-gap: 5px;
+  padding: 5px; }
+
+section img {
+  width: 100%; }
 
 /* Mixins -------------------- */
 .body {
